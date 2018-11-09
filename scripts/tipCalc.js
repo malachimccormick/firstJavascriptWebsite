@@ -21,7 +21,8 @@ function calculateTip() {
       document.getElementById("each").style.display = "block";
     }
   
-    
+    // Here we are setting the variables and cleaning up the numbers to display 
+    // the final values
     let total = (billTotal * tipPercentage) / people;
     let totalPerPerson= (total + (billTotal/people));
     let amountToPay= totalPerPerson * people;
@@ -34,8 +35,8 @@ function calculateTip() {
     totalPerPerson= totalPerPerson.toFixed(2);
     amountToPay= amountToPay.toFixed(2);
     
-
-    document.getElementById("total").style.display = "block";
+    // This bit of code shows the final totals
+    $("#total").slideDown();
     document.getElementById("tipAmount").innerHTML = total;
     document.getElementById("payAmount").innerHTML = totalPerPerson;
     document.getElementById("amountToPay").innerHTML = amountToPay;
@@ -45,8 +46,10 @@ function calculateTip() {
 document.getElementById("total").style.display = "none";
 
 function reset(){
-    document.location.reload()
-    document.getElementById("total").style.display = "none";
+    // document.location.reload()
+    document.getElementById("billTotal").value = "none";
+    document.getElementById("tipPercentage").value = 0;
+    document.getElementById("people").value = 0;
    
 }
  
