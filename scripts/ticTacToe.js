@@ -165,4 +165,6 @@ function winner(){
 
 }
 })
+// I attempted the cookies but I did not fully get it becuase I did not fully grasp
+// the concept. However I do know how to set a cookie with an experation.
 document.cookie =`winsForX= ${xWins}; winsForX=${oWins}; expires=Thu, 18 Dec 2018 12:00:00 UTC` ; 
