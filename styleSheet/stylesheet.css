@@ -1,0 +1,419 @@
+/* calculator */
+
+#mathCalculator {
+  
+  background:slategrey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+.display-4{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+}
+.container {
+display: grid;
+justify-content: center;
+grid-template-columns: 90px 90px 90px 90px;
+grid-template-rows: 90px 90px;
+grid-template-areas: 
+"header header header header" 
+"body body body body" 
+"body body body body" 
+"body body body body" 
+"body body body body" 
+"body body body body";
+}
+
+.item-header {
+grid-area: header;
+grid-row-start: 1;
+grid-row-end: 1;
+background-color: black;
+color: white;
+text-align: right;
+font-size: 65px;
+}
+.btn {
+background-color: rgb(63, 63, 63);
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+margin: 4px 2px;
+border-radius: 25%;
+font-size: 30px;
+}
+.btn:focus {outline:0;}
+
+.all-clear{
+background-color: silver;
+border: none;
+color: black;
+padding: 20px;
+text-align: center;
+margin: 4px 2px;
+border-radius: 25%;
+font-size: 30px;
+
+}
+.negativePositive{
+  background-color: silver;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 25%;
+  font-size: 30px;  
+}
+.equal {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 25%;
+  font-size: 30px;
+}
+.percent{
+  background-color: silver;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 25%;
+  font-size: 30px; 
+}
+.blank{
+  background-color:  rgb(63, 63, 63);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 25%;
+  font-size: 30px;  
+}
+.silver {
+background-color: silver;
+color: black;
+margin: 4px 2px;
+
+}
+.orange {
+background-color: orange;
+}
+
+
+/* tip calculator starts */
+.tipCalc {
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-_Q0Duex0TvsH2qkKOjV8lNzKOtSdcZ5_XNoACZpgdFhTVA0eg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header{
+  margin-top: 20px;
+  
+
+}
+#dropdownMenuButton{
+  float: right;
+  background: rgb(145, 183, 221);
+  font-size: 20px;
+}
+
+
+#calculator {
+  padding-top: 5px;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+ 
+#headtitle{
+  margin-top: 20px;
+  color: black;
+  font-size: 70px;
+  font-family: fantasy;
+  font-weight: bold;
+  
+}
+#subtitles {
+  display: flex;
+  justify-content: center;
+  background: rgb(132, 68, 206);
+  width: 200px;
+  color: white;
+  
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+ input {
+  padding-right:20px; 
+  font-size: 25px;
+  
+  color: black;
+  background-color: #f7f7f7;
+  width: 200px;
+  
+  
+}
+
+.moneySign {
+ font-size: 35px;
+
+} 
+
+.moneySign input:focus {
+  border: 0;
+  background-color: yellow;
+  border: 3px solid green;
+  outline: none;
+ 
+}
+
+#people {
+  display: flex;
+  justify-content: center;
+  
+  padding: 5px 5px 8px 8px;
+  background-color: #f7f7f7;
+  font-size: 25px;
+}
+
+
+
+#tipPercentage {
+  margin-left: 20px;
+  font-size: 25px;
+}
+.addTip{
+  
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-right: 20px;
+    background: rgb(178, 129, 233);
+    display: inline-block;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+}
+.resetButton{
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-top: 50px;
+  margin-right: 20px;
+  background: rgb(132, 68, 206);
+  display: inline-block;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background:rgb(60, 179, 31);
+  border-bottom-color: #111;
+}
+
+
+
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+#total{
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#total small {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  background: lightgray;
+}
+
+/* Tic Tac Toe starts */
+.ticTac {
+  background: linear-gradient(to bottom, rgb(86, 196, 86) 30%, whitesmoke 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+.nav{
+  background-color: whitesmoke;
+}
+.tttGame{
+  display: grid;
+  margin-top:5%;
+  grid-template-columns: 175px 175px 175px;
+  grid-gap: 0;
+  justify-content: center;
+  width: 100%;
+  
+
+}
+#letsPlay{
+  display: flex;
+  justify-content: center;
+}
+.score{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.winner{
+  display: inline-flex;
+  
+  margin-top: 20px;
+  margin-left: 50px; 
+}
+.winnerO{
+  margin-bottom: 5px;
+}
+.turn{
+display: inline-flex;
+float: right;
+margin-top: 5px;
+margin-right: 50px;
+}
+
+/* h1{
+  
+  color:black;
+  font-size: 70px;
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  background: rgb(145, 206, 145);
+  font-family: fantasy;
+  
+}
+ */
+.jumbotron{
+  background-image: url(https://static3.scirra.net/images/newstore/products/2063/splash.png);
+  background-size: cover;
+  background-size: 200px;
+
+  
+}
+.box:hover{
+  background-color: yellow;
+}
+.box{
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(145, 206, 145);
+  height: 100px;
+  font-size: 60px;
+  text-align: center ;
+  
+  cursor: pointer;
+}
+#b1{
+  border-left: none;
+  border-top: none;
+}
+#b2{
+  border-top: none;
+}
+#b3{ 
+  border-top: none;
+  border-right: none;
+}
+#b4{
+  border-left: none;
+}
+#b6{
+  border-right: none;
+}
+#b7{
+  border-left: none;
+  border-bottom: none;
+}
+#b8{
+  border-bottom: none;
+}
+#b9{
+  border-bottom: none;
+  border-right: none;
+}
+.restart{
+  
+  background: rgb(255, 176, 5);
+  display:block;
+  margin-left: 45%;
+  margin-top: 15px;
+  font-weight: bold; 
+}
+.restart:hover{
+ background: red;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid rgb(86,98,110);
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.media > * {
+  flex: 1 1 150px;
+  margin: 5px;
+}
+
+.wrapper {
+  width: 250px;
+  border: 2px dotted #999;}
